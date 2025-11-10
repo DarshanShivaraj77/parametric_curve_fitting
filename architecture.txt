@@ -1,0 +1,27 @@
+Parametric Curve Fitting - Architecture
+
+1. Input
+   xy_data.csv with points (x, y)
+
+2. Preprocessing
+   Data is read and t values are generated in the range 6 to 60.
+
+3. Model
+   x = t*cos(θ) - e^(M*|t|)*sin(0.3t)*sin(θ) + X
+   y = 42 + t*sin(θ) + e^(M*|t|)*sin(0.3t)*cos(θ)
+
+4. Optimization
+   Parameters θ, M, X are found by minimizing the difference between given and predicted values.
+   Method: least_squares from scipy
+   Bounds:
+   θ → (0°, 50°)
+   M → (-0.05, 0.05)
+   X → (0, 100)
+
+5. Output
+   θ = 29.5823
+   M = -0.05
+   X = 55.0135
+
+6. Tools
+   Python, NumPy, Pandas, SciPy
