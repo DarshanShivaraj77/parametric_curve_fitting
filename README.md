@@ -30,6 +30,9 @@ M = -0.05
 X = 55.0135
 
 
+Desmos visualization:
+https://www.desmos.com/calculator/rt3cm5yixy
+
 Final Equation-
 (t*cos(29.5823°) - e^(-0.05|t|)*sin(0.3t)*sin(29.5823°) + 55.0135,  
 42 + t*sin(29.5823°) + e^(-0.05|t|)*sin(0.3t)*cos(29.5823°))
@@ -42,3 +45,4 @@ NumPy, Pandas, SciPy
 
 Author-
 Darshan Shivaraj
+
